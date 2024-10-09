@@ -21,17 +21,17 @@ public:
 	extendedChain()
 	{
 		head=new Node<T>;
-		head->prev=head;
+		head->prev=head;//哨兵节点不储存内容
 		head->next=head;
 		count=0;
 	}
 	void insert(T d)
 	{
 		Node<T>* newnode=new Node<T>;
-		newnode->data=d;
+		newnode->data=d;//创造新节点
 
 		newnode->next=head;
-		newnode->prev=head->prev;
+		newnode->prev=head->prev;//head->prev就是tail
 		head->prev->next=newnode;
 		head->prev=newnode;
 

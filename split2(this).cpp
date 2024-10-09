@@ -59,11 +59,12 @@ public:
 				curr->prev->next=curr->next;
 				curr->next->prev=curr->prev;
 
-				//将该节点直接放入链表a中
+				//处理该节点，将该节点直接放入链表a中
 				curr->prev=a.head->prev;
 				curr->next=a.head;
-
+				//原来的尾部的下一个是curr
 				a.head->prev->next=curr;
+				//新尾部是curr
 				a.head->prev=curr;
 
        		} 
@@ -79,7 +80,6 @@ public:
 				
 				b.head->prev->next=curr;
 				b.head->prev=curr;  
-
        	 	}
         	curr = nextNode;
         	index++;
