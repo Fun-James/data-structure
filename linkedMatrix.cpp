@@ -393,27 +393,27 @@ istream &linkedMatrix::operator>>(istream &in)
 }
 int main()
 {
-    // linkedMatrix mat0;
-    // mat0.set(1, 1, 108);
-    // mat0.set(100, 100, 20);
-    // mat0.set(23, 56, 10);
-    // linkedMatrix mat1;
-    // mat1.set(1, 2, 23);
-    // mat1.set(100, 100, 20);
-
-    // cout << mat1.get(1, 2) << " " << mat1.get(1, 3) << endl;
-    // (mat0 - mat1).print();
-
     linkedMatrix mat0;
+    mat0.set(1, 1, 108);
+    mat0.set(100, 100, 20);
+    mat0.set(23, 56, 10);
     linkedMatrix mat1;
-    mat0.set(1, 2, 23);
-    mat0.set(2, 5, 7);
-    mat0.set(5 ,3 ,11);
-    mat0.set(6 ,5, 12);
+    mat1.set(1, 2, 23);
+    mat1.set(100, 100, 20);
 
-    mat1.set(2, 2, 4);
-    mat1.set(3, 6 ,8);
-    mat1.set(5, 5, 9);
-    (mat0*mat1).print();
+    cout << mat1.get(1, 2) << " " << mat1.get(1, 3) << endl;
+    (mat0 - mat1).print();
+
+    // linkedMatrix mat0;
+    // linkedMatrix mat1;
+    // mat0.set(1, 2, 23);
+    // mat0.set(2, 5, 7);
+    // mat0.set(5 ,3 ,11);
+    // mat0.set(6 ,5, 12);
+
+    // mat1.set(2, 2, 4);
+    // mat1.set(3, 6 ,8);
+    // mat1.set(5, 5, 9);
+    // (mat0*mat1).print();
     return 0;
 }
