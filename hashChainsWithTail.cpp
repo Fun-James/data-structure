@@ -18,11 +18,11 @@ public:
 template<typename K,typename V>
 class List{
 public:
-	Node<K,V>* head;//作为哨兵节点
+	Node<K,V>* head;
 	Node<K,V>* tail;
 	List()
 	{
-		head=new Node<K,V>(INT_MAX,"null");
+		head=new Node<K,V>(INT_MAX,"null");//实例用key：int，value：string来测试
 		tail=new Node<K,V>(INT_MAX,"null");
 		head->next=tail;
 	}

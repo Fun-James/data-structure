@@ -51,6 +51,10 @@ public:
 template <typename T>
 void delete_all(arrayStack<T> &s, T x)
 {
+    if (s.top == -1) {
+        cout << "Stack is empty" << endl;
+        return;
+    }
     int currLength = s.top + 1;
     T *newarray = new T[s.length];
     int count = 0;
