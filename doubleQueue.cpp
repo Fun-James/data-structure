@@ -8,7 +8,7 @@ class doubleQueue
     int count;
     int* queue;
     int left;
-    int right;
+    int right;//左闭右开
 
 public:
     doubleQueue()

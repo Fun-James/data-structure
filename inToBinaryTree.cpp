@@ -66,6 +66,7 @@ public:
         leftchild=nullptr;
     }
 };
+
 bool isOperator(char c)
 {
     if(c=='+'||c=='-'||c=='*'||c=='/')
