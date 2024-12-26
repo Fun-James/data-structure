@@ -413,7 +413,7 @@ int main()
     tree.insert(22);
     tree.insert(8);
     tree.insert(11);
-    tree.insert(9);
+    tree.insert(18);
     tree.insert(0);
     /*tree.deleteNode(22);*/
     tree.ascend();
